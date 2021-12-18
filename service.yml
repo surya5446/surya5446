@@ -1,0 +1,5 @@
+- name: Start httpd service
+  hosts: all
+  gather_facts: false
+  tasks:
+  - service: name=httpd state=started enabled=true
